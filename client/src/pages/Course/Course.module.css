@@ -1,0 +1,276 @@
+.footer {
+    background: #F7EEEC;
+    width: 100%;
+    margin-top: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    Justify-content: space-between;
+}
+
+.footer__address {
+    margin-left: 25px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    display: flex;
+
+}
+
+.footer__allText {
+    margin-left: 16px;
+    /* background: red; */
+    margin-top: 25px;
+
+
+}
+
+.footer__title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+
+}
+
+.footer__text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 24px; */
+    line-height: 29px;
+
+    color: #000000;
+}
+
+.footer__contact {
+    /* margin-top: 55px; */
+    margin-right: 100px;
+
+
+}
+
+.footer__phone {
+    white-space: nowrap;
+}
+
+.footer__contact_phone {
+    display: flex;
+}
+
+.footer__contact__number {
+    /* padding-top: 50px; */
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+    line-height: 29px;
+
+    color: #000000;
+    margin-left: 16px;
+
+}
+
+.footer__contact_text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 349px) {
+    .wrapper__time {
+        padding-left: 0px;
+
+        position: relative;
+        top: 0px;
+
+    }
+
+}
+
+@media screen and (max-width: 657px) {
+    .wrapperLastEvents__lastEvents {
+
+        width: 80%;
+    }
+
+    .wrapper__title {
+        margin-right: 20px;
+
+    }
+}
+
+@media screen and (max-width: 729px) {
+    .wrapper__time {
+        padding-left: 0px;
+        position: relative;
+        top: 0px;
+    }
+
+    .wrapper__title {
+        padding-right: 2px;
+    }
+
+}
+
+@media screen and (max-width: 916px) {
+    .footer__contact {
+        margin-left: 25px;
+    }
+
+    .footer__contact_phone {
+        margin-bottom: 15px;
+    }
+
+    .footer__address {
+        margin-bottom: 0;
+        margin-top: 12px;
+    }
+}
+
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: red;
+    /* identical to box height */
+}
+
+.conteiner1 {
+    background: #FF8C00;
+    height: 150px;
+    width: 400px;
+
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 22px;
+    text-decoration: none;
+
+
+}
+
+.Vid {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 22px;
+    text-decoration: none;
+
+}
+
+.conteiner {
+    height: 150px;
+    width: 400px;
+    background: #E6E6FA;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+
+.kol {
+    font-family: 'Lato', sans-serif;
+    margin-top: 2vh;
+}
+
+
+
+.title1 {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    /* Отменяем подчеркивание у ссылки */
+}
+
+.tema {
+    margin-top: 30px;
+    margin-left: 20px
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.img {
+    width: 80px;
+    height: 75px;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-right: 15px;
+
+
+}
+
+.conteiner1:hover {
+    color: #5B73CE;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1.1);
+    /* box-shadow: 0px 0px 25px 15px #DDDBFF; */
+}
+
+.conteiner:hover {
+    color: #5B73CE;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1.1);
+    /* box-shadow: 0px 0px 25px 15px #DDDBFF; */
+}
+
+.delete {
+    background: 0;
+    border: 0;
+    margin: 10px;
+    margin-top: 115px;
+    font-weight: 600;
+    color: #000000;
+}

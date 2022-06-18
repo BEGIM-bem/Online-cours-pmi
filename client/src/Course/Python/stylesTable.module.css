@@ -1,0 +1,54 @@
+.table {
+    border-collapse: separate;
+    width: 60%;
+    cursor: pointer;
+
+    /* text-align: center; */
+    border-spacing: 0 10px;
+    white-space: nowrap;
+
+    margin-top: 1.5rem;
+}
+
+.container {
+    /* margin-bottom: 5rem; */
+    padding-bottom: 5vh;
+}
+
+@media screen and (max-width: 889px) {
+    .container {
+        overflow: scroll;
+    }
+}
+
+
+
+
+.d {
+    border: 1px solid #eeeeee;
+    border-style: solid none;
+    padding-top: 1.4vh;
+    padding-bottom: 1.5vh;
+
+
+
+    /* padding-top: 14px;
+    padding-bottom: 14px; */
+
+    /* background-color: blue; */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 1rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+.d:hover {
+    background: rgb(42, 46, 67);
+}

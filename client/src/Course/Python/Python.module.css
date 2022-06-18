@@ -1,0 +1,53 @@
+.Python {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+
+    font-size: 3.5rem;
+    line-height: 29px;
+    color: #000000;
+}
+
+.text {
+
+    max-width: 500px;
+    margin-top: 50px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+
+    font-size: 16px;
+    line-height: 29px;
+    color: #000000;
+}
+
+
+.tbody {
+    /* background: red; */
+    border-top: 1px solid black;
+}
+
+.video {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 545px) {
+
+    .table {
+        overflow: scroll;
+    }
+
+}
+
+@media screen and (max-width: 869px) {
+
+    .video {
+        overflow: scroll;
+    }
+
+}
