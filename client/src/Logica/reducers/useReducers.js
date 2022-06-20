@@ -2,12 +2,14 @@ const LOGOUT = "LOGOUT"
 export const ERROR = 'Error'
 export const LOGOUT1 = 'LOGOUT1'
 export const GetDate = 'GetDate'
+export const GetReviews = 'GetReviews'
 const defaultState = {
 
     error: '',
     isAuth: false,
     isLoading: false,
-    dateVidio: []
+    dateVidio: [],
+    dateReviews: []
 }
 
 
@@ -34,7 +36,11 @@ function userReducer(state = defaultState, action) {
                 dateVidio: action.date,
 
             }
-
+        case GetReviews:
+            return {
+                ...state,
+                dateReviews: action.date
+            }
 
 
         case ERROR:

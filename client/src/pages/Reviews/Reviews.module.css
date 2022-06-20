@@ -1,0 +1,86 @@
+.reviews {
+    margin-left: 20px;
+    margin-top: 25px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+
+}
+
+.title {
+    border-bottom: 2px solid rgb(68, 27, 109);
+}
+
+
+.conteiner {
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    padding: 20px;
+
+}
+
+.NameInput {
+    width: 90%;
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+
+}
+
+.CommentInput {
+    width: 90%;
+    height: 90px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.conteiner__btn {
+    width: 90px;
+    height: 40px;
+    background: #2F4F4F;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    border: 0;
+}
+
+.elements {
+    padding: 10px;
+    position: relative;
+    margin-top: 20px;
+    width: 98%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.elements__name {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+
+}
+
+.btnDlete {
+    width: 70px;
+    height: 35px;
+    background: #2F4F4F;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    border: 0;
+    color: white;
+
+    position: absolute;
+    bottom: 10px;
+    left: 90%;
+    transform: translateX(-50%);
+
+
+
+}

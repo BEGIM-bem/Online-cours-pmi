@@ -2,10 +2,37 @@
   background: rgb(42, 46, 67);
   height: 3.7rem;
   display: flex;
+  position: relative;
 
   align-items: center;
   font-size: 1.2rem;
 }
+
+.into {
+  position: absolute;
+  bottom: 10px;
+  left: 90%;
+  color: white;
+  top: 32%;
+  /* transform: translateX(-50%); */
+}
+
+@media screen and (max-width: 1025px) {
+  .into {
+    margin-left: -80px;
+  }
+
+}
+
+
+@media screen and (max-width: 341px) {
+  .into {
+    margin-left: -80px;
+    margin-top: 12px;
+  }
+
+}
+
 
 .BackArrow {
   display: flex;
@@ -133,7 +160,7 @@
   .Navbar__active {
     position: absolute;
     top: 60px;
-    background: #e73d53;
+    background: rgb(42, 46, 67);
     width: 100%;
     text-align: center;
     padding: 2rem;

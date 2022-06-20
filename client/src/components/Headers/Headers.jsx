@@ -82,8 +82,8 @@ function Headers() {
 
                 {
                     isAuth === false ?
-                        <NavLink to='/login'> Войти </NavLink> :
-                        <img src={BackArrow} className={styles.f} onClick={goOut} alt='not find icon!' />
+                        <NavLink to='/login' className={styles.into} > Войти </NavLink> :
+                        <p onClick={goOut} className={styles.into}  > Выход</p>
                 }
 
             </nav >

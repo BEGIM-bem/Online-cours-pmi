@@ -54,6 +54,46 @@ app.delete('/api/delete/:id', (req, res) => {
     })
 })
 
+
+// Отзывы 
+app.get('/api/reviewsGet', (req, res) => {
+    const sqlSelect = 'SELECT * FROM reviews';
+    db.query(sqlSelect, (err, result) => {
+        console.log("ResultGetReviews: ", result)
+        console.log("ErrorGetReviews: ", err)
+        res.send(result)
+    })
+})
+
+app.post('/api/reviews', (req, res) => {
+    const name = req.body.name
+    const reviews = req.body.reviews
+    const date = req.body.date
+
+
+    const sqlInsert = "INSERT INTO reviews (name,  reviews, date) VALUES (?,?, ?)";
+    db.query(sqlInsert, [name, reviews, date], (err, result) => {
+        console.log("Error: ", err)
+        console.log("result: ", result)
+        res.send(result)
+    })
+})
+
+
+
+app.delete('/api/reviewsDelete/:id', (req, res) => {
+    const name = req.params.id
+
+    const sqlDelete = 'DELETE FROM reviews WHERE id = ?';
+    db.query(sqlDelete, name, (err, result) => {
+        res.send(result)
+        if (err) console.log(err)
+    })
+})
+
+
+
+
 app.listen(3001, () => {
     console.log("running on port 3001")
 }) 
