@@ -57,7 +57,7 @@ app.delete('/api/delete/:id', (req, res) => {
 
 // Отзывы 
 app.get('/api/reviewsGet', (req, res) => {
-    const sqlSelect = 'SELECT * FROM reviews';
+    const sqlSelect = 'SELECT * FROM reviewss';
     db.query(sqlSelect, (err, result) => {
         console.log("ResultGetReviews: ", result)
         console.log("ErrorGetReviews: ", err)
@@ -71,7 +71,7 @@ app.post('/api/reviews', (req, res) => {
     const date = req.body.date
 
 
-    const sqlInsert = "INSERT INTO reviews (name,  reviews, date) VALUES (?,?, ?)";
+    const sqlInsert = "INSERT INTO reviewss (name,  reviews, date) VALUES (?,?, ?)";
     db.query(sqlInsert, [name, reviews, date], (err, result) => {
         console.log("Error: ", err)
         console.log("result: ", result)
@@ -84,7 +84,7 @@ app.post('/api/reviews', (req, res) => {
 app.delete('/api/reviewsDelete/:id', (req, res) => {
     const name = req.params.id
 
-    const sqlDelete = 'DELETE FROM reviews WHERE id = ?';
+    const sqlDelete = 'DELETE FROM reviewss WHERE id = ?';
     db.query(sqlDelete, name, (err, result) => {
         res.send(result)
         if (err) console.log(err)

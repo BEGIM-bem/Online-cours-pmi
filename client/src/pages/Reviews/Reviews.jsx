@@ -18,6 +18,8 @@ function Reviews() {
     const SentValues = () => {
         console.log("Name: ", name, "Comment: ", comment)
         dispatch(PostReviews(name, comment))
+        setName('')
+        setComment('')
     }
 
     return (
@@ -28,7 +30,7 @@ function Reviews() {
                     state.dateReviews.map(item =>
 
                         <div key={item.id} className={styles.elements} >
-                            <p className={styles.elements__name}>Отзыв от {item.name || 'Неизвестная'}&#128521; </p>
+                            <p className={styles.elements__name}>Отзыв от {item.name || 'Неизвестный'}&#128521; </p>
                             <p className={styles.elements__date}>&#128198;  {[new Date(item.date).getDate(), new Date(item.date).getMonth() + 1,
                             new Date(item.date).getFullYear()].map(x => { return x < 10 ? "0" + x : x }).join(".")}</p>
                             <p className={styles.elements__comments}>{item.reviews}</p>

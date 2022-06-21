@@ -17,15 +17,6 @@ function Course() {
     }, [dispatch])
 
 
-    // if (localStorage.getItem('token') !== null) {
-    //     let GetToken = localStorage.getItem('token')
-    //     let decoded
-
-    //     decoded = jwt_decode(GetToken);
-    //     console.log("LL: ", decoded)
-    //     setRole(decoded.role)
-
-    // }
 
 
 
@@ -45,7 +36,7 @@ function Course() {
         <div>
             {
                 state.isAuth === false ? null :
-                    <div onClick={() => setActive(true)}>Добавить видео урок</div>
+                    <div className={styles.add} onClick={() => setActive(true)}>Добавить видео урок</div>
 
             }
 

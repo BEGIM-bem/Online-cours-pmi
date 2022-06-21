@@ -1,0 +1,61 @@
+.title {
+    font-family: 'Lato', sans-serif;
+    font-size: 45px;
+}
+
+.text {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+
+
+
+}
+
+.About {
+    color: black;
+    /* background: rgb(42, 46, 67); */
+    /* margin-left: 30px; */
+    width: 95%;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 0 auto;
+    margin-top: 50px;
+
+
+}
+
+.About_item1 {
+    margin-right: 15px;
+    width: 50%;
+}
+
+.img {
+    border-radius: 25px;
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 1075px) {
+    .About_item1 {
+        margin-right: 15px;
+        width: 100%;
+
+    }
+
+
+    .About {
+        color: black;
+        /* background: rgb(42, 46, 67); */
+        /* margin-left: 30px; */
+        width: 95%;
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        /* margin-top: -10px; */
+
+
+    }
+
+}

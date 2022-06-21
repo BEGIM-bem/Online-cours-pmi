@@ -1,4 +1,5 @@
 .HomePage {
+    /* background: rgb(42, 46, 67); */
     /* background: rgb(40, 46, 67); */
 }
 
@@ -24,19 +25,20 @@
     font-family: 'Lato', sans-serif;
     font-size: 45px;
     line-height: 29px;
-    color: white;
-    background: blue;
+
+    background: chocolate;
+    padding: 10px;
     display: inline;
     /* color: darkgreen; */
 }
 
 .d {
+    margin: 0 auto;
     font-size: 24px;
-    line-height: 29px;
-    color: black;
+    width: 80%;
     background: chocolate;
-    display: inline;
-    /* color: blue; */
+
+
 }
 
 .homeLess {

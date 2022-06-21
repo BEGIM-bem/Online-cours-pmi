@@ -7,23 +7,11 @@ import img from './images/fon4.jpg'
 import styles from './Home.module.css'
 import SliderContent from "../../components/Slider/sliderContent.js";
 import sliderImage from "../../components/Slider/sliderImage.js";
-
-// import { useSelector, useDispatch } from 'react-redux';
+import About from '../About/About.jsx';
 
 const len = sliderImage.length - 1;
 
 function Home() {
-    // const [activeIndex, setActiveIndex] = useState(0);
-
-    // useEffect(() => {
-
-    //     const interval = setInterval(() => {
-    //         setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
-    //     }, 5000);
-    //     return () => clearInterval(interval);
-
-
-    // }, []);
 
 
 
@@ -35,21 +23,14 @@ function Home() {
                 <img src={img} alt='' className={styles.img} />
                 <div className={styles.homeLess}>
                     <h1 className={styles.f} >О платформе</h1>
-                    <p className={styles.d}>Миссия Skillbox — дать возможность каждому быть актуальным и востребованным <br />специалистом прямо сейчас.
+                    <p className={styles.d}>Миссия onlinecourspmi — дать возможность каждому быть актуальным и востребованным <br />специалистом прямо сейчас.
                         Вне зависимости от возраста и географии. </p>
                 </div>
 
             </div>
 
-            {/* <div >
-                <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} prevSlide={() =>
-                    setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
-                }
-                    nextSlide={() =>
-                        setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
-                    } />
+            <About />
 
-            </div> */}
 
 
 

@@ -119,8 +119,8 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    background: #e73d53;
-    border: 1px solid #e6334a;
+    background: rgb(42, 46, 67);
+    border: 1px solid rgb(42, 46, 67);
     box-sizing: border-box;
     border-radius: 10px;
     color: white;
@@ -134,7 +134,7 @@
 .actions__operations {
     z-index: 1;
     background: #ffffff;
-    border: 1px solid #e73d53;
+    border: 1px solid rgb(42, 46, 67);
     box-sizing: border-box;
     border-radius: 10px;
     width: 205px;
@@ -147,13 +147,13 @@
     font-size: 18px;
     line-height: 22px;
 
-    color: #e73d53;
+    color: black;
 }
 
 .actions__operations1 {
     z-index: 1;
     background: #ffffff;
-    border: 1px solid #e73d53;
+    border: 1px solid rgb(42, 46, 67);
     box-sizing: border-box;
     border-radius: 10px;
     width: 205px;
@@ -169,7 +169,7 @@
     font-size: 18px;
     line-height: 22px;
 
-    color: #e73d53;
+    color: black;
 }
 
 @media screen and (max-width: 795px) {

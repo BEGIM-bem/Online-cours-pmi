@@ -52,7 +52,7 @@ function Headers() {
             <nav className={styles.Navbar}>
 
                 <MutatingDots ariaLabel="loading-indicator" />
-                <h1 className={styles.Navbar__title} >Skillbox</h1>
+                <h1 className={styles.Navbar__title} >onlinecourspmi</h1>
 
                 <div className={styles.menuIcon} onClick={handleClick} >
                     {clicked ?
