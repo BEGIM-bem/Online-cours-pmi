@@ -6,9 +6,9 @@ import mysql from 'mysql2';
 
 const db = mysql.createPool({
     host: "localhost",
-    user: "root",
-    password: "",
-    database: 'cours',
+    user: "", // Name  Workbench
+    password: "", //Set a password for your database
+    database: '', //Database Name
 })
 
 app.use(cors())
@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 
 app.get('/api/get', (req, res) => {
-    const sqlSelect = 'SELECT * FROM cours';
+    const sqlSelect = 'SELECT * FROM cours'; // 'SELECT * FROM Database Name'
     db.query(sqlSelect, (err, result) => {
         console.log("ResultGet: ", result)
         console.log("ErrorGet: ", err)
@@ -35,7 +35,7 @@ app.post('/api/insert', (req, res) => {
     const silka = req.body.silka
 
     console.log(tema)
-    const sqlInsert = "INSERT INTO cours (tema,  silka) VALUES (?,?)";
+    const sqlInsert = "INSERT INTO cours (tema,  silka) VALUES (?,?)"; //"INSERT INTO (Database Name and colum) (tema,  silka) VALUES (?,?)";
     db.query(sqlInsert, [tema, silka], (err, result) => {
         console.log("Error: ", err)
         console.log("result: ", result)
