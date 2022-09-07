@@ -16,7 +16,7 @@ function Access() {
 
 
             <p className={styles.text}>Если вы не знаете как сделать базу данных в программе Microsoft Access, то посмотрите этот урок. Вместе с вами мы разберем основные понятия любой базы данных Access: таблицы, формы, запросы, отчеты, макросы и т.д. Вы убедитесь, что программа Microsoft Access очень проста и не требует дополнительных знаний в освоении. </p>
-            {/* <iframe src="https://vk.com/video_ext.php?oid=-66669811&id=456242349&hash=fe6e1dc24272a48e" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe> */}
+
 
             <div className={stylesTable.container} >
                 <table className={stylesTable.table} >
@@ -41,7 +41,7 @@ function Access() {
             </div>
 
             {
-                videoSrc.isOpen == true ?
+                videoSrc.isOpen === true ?
 
                     <Video video={videoSrc.video} isOpen={videoSrc.isOpen} setVideoSrc={setVideoSrc} />
                     : null
