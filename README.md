@@ -1,6 +1,6 @@
 
 # Online Cours PMI
----
+
 The PMI Online Course is a web-based application where PMI (Applied Mathematics and Computer Science) students can learn from video lessons. This web application collects all the lessons in the subjects completed in the last year of study. Teachers can also upload new video lessons.
 
 ![](./img/onlinEPMI.png)
