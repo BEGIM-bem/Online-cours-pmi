@@ -26,7 +26,7 @@ __Install__
 
 Use the git to clone the project to your local machine.
 
-    https://github.com/BEGIM-bem/Online-cours-pmi.git
+git clone https://github.com/BEGIM-bem/Online-cours-pmi.git
 
 __client__
 
